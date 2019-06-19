@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:200,400,500,700&display=swap");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -409,7 +409,9 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -421,3 +423,52 @@ body {
   clear: both;
   content: '';
   display: table; }
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hero__text {
+    margin-top: 10%; }
+  .hero-section {
+    height: 50vh;
+    background: linear-gradient(rgba(12, 20, 66, 0.97), rgba(12, 20, 66, 0.97)), url("./img/header.jpeg") no-repeat center;
+    background-size: cover;
+    padding: 30px; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center; }
+
+.right__menu {
+  display: flex;
+  align-items: center; }
+  .right__menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 150px; }
+    .right__menu ul li {
+      margin-right: 30px; }
+      .right__menu ul li a:link, .right__menu ul li a:visited {
+        text-decoration: none;
+        color: white;
+        font-weight: 200; }
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 80%;
+  margin-right: 24px; }
+  .btn__outline {
+    border: 1px solid white;
+    background: none; }
+  .btn__full {
+    border: 1px solid transparent;
+    background: #304ff3; }

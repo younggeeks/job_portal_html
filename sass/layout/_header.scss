@@ -1,3 +1,53 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.hero{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+
+  &__text{
+    margin-top:10%;
+  }
+  &-section{
+  height:50vh;
+  background: linear-gradient(rgba($dark-color,.97), rgba($dark-color,.97)),  url("./img/header.jpeg") no-repeat center;
+  background-size: cover;
+  padding:30px;
+}
+
+
+
+}
+
+nav{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 80%;
+  margin:0 auto;
+  align-items: center;
+}
+
+.right__menu{
+  display:flex;
+  align-items: center;
+
+  ul{
+    display:flex;
+    flex-direction:row;
+    list-style: none;
+    margin-right:150px;
+    li {
+      margin-right:30px;
+
+      a:link, a:visited{
+        text-decoration: none;
+        color: white;
+        font-weight:200;
+      }
+    }
+  }
+}
